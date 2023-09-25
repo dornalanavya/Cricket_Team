@@ -17,8 +17,8 @@ const initializeDBAndServer = async () => {
             driver: sqlite3.Database,
 
         });
-        app.listen(3002, () => {
-            console.log("Server Running at http://localhost:3002/");
+        app.listen(3009, () => {
+            console.log("Server Running at http://localhost:3009/");
 
         })
      } catch(e) {
@@ -93,7 +93,7 @@ app.put("/players/:playerId/", async(request, response) => {
     cricket_team
     SET 
     player_name = '${playerName}',
-    jersery_number = ${jerseyNumber},
+    jersey_number = ${jerseyNumber},
     role = '${role}
     WHERE 
     player_id = ${playerId};`;
@@ -109,7 +109,7 @@ app.delete("/players/:playerId/", async (request, response) => {
 DELETE FROM
 cricket_team
 WHERE
-player_id = ${playeId};`;
+player_id = ${playerId};`;
   await db.run(deletePlayerQuery);
   response.send("Player Removed");
 

@@ -1,10 +1,10 @@
 
-GET http://localhost:3002/players/
+GET http://localhost:3009/players/
 
 
 ###
 
-POST http://localhost:3002/players/
+POST http://localhost:3009/players/
 content-Type: application/json
 
 {
@@ -13,11 +13,11 @@ content-Type: application/json
     "role": "Bowler"
 }
 ###
-GET http://localhost:3002/players/1/
+GET http://localhost:3009/players/1/
 
 
 ###
-PUT http://localhost:3002/players/3/
+PUT http://localhost:3009/players/3/
 contend-Content-Type: application/json
 
 {
@@ -25,7 +25,7 @@ contend-Content-Type: application/json
     "jerseyNumber": 54,
     "role": "All-rounder"
 }
-
+s
 ###
-DELETE http://localhost:3002/players/2
+DELETE http://localhost:3009/players/2
 
